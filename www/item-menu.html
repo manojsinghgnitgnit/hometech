@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PickAtHome.com</title>
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page-index">
+        <!--menu:start-->
+        <div id="mypanel" data-role="panel" data-display="overlay">
+            <ul data-role="listview" data-split-icon="arrow-l">
+                <li>
+                    <a href="index.html">
+                        <h3>HOME</h3>
+                    </a>
+                    <a href="#app-header" data-rel="close">&nbsp;</a>
+                </li>
+            </ul>
+            <br />
+            <!--service type-->
+            <label for="select-native-2" style="font-size:small">Service Type:</label>
+            <select name="select-native-2" id="select-native-2" data-mini="true">
+                <option value="1">Kirana/Groccery</option>
+            </select>
+            <br />
+            <ul data-role="listview">
+                <li data-icon="user">
+                    <a href="#popupLogin" data-rel="popup" data-position-to="window" data-transition="pop">
+                        Log In
+                    </a>
+                    <div data-role="popup" id="popupLogin" class="ui-corner-all">
+                        <form>
+                            <div style="padding:10px 20px;">
+                                <h3>Please sign in</h3>
+                                <label for="un" class="ui-hidden-accessible">Username:</label>
+                                <input name="user" id="un" value="" placeholder="username" type="text">
+                                <label for="pw" class="ui-hidden-accessible">Password:</label>
+                                <input name="pass" id="pw" value="" placeholder="password" type="password">
+                                <button type="submit" class="ui-btn ui-corner-all ui-btn-icon-left">Sign in</button>
+                            </div>
+                        </form>
+                        <div style="padding:10px 20px;">
+                            <h4>New User</h4>
+                            <a href="#" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Sign Up</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <br />
+            <br />
+            <ul data-role="listview">
+                <li>
+                    <a href="store.html">
+                        My Shop
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Add Seller
+                    </a>
+                </li>
+                <li>
+                    <a href="account.html">
+                        Account
+                    </a>
+                </li>
+            </ul>
+            <br />
+            <br />
+            <ul data-role="listview">
+                <li>
+                    <a href="index.html">
+                        Help & Support
+                    </a>
+                </li>
+            </ul>
+            <br />
+            <p>
+                <h3><a href="pah.html">Pickathome.com</a> &reg;</h3>
+                <span>Daily supplies from preople you know.</span>
+                <br />
+                <br />
+                <span>Call us at 909090909090 or mail us at sell@pickathome.com.</span>
+            </p>
+        </div>
+        <!--menu:end-->
+        <div id="app-header" data-role="header" data-position="fixed" role="banner">
+            <a href="#mypanel" class="ui-btn ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+            <h1>Sweet India</h1>
+            <a href="cart.html" class="ui-btn ui-btn-icon-left ui-icon-shop">40</a>
+            <!--header-->
+            <span class="ui-bar ui-bar-a" style="font-size:small;">Item menu</span>
+        </div>
+        <!-- content:start-->
+        <div data-role="main" class="ui-content">
+            <div data-role="collapsibleset">
+                <div data-role="collapsible">
+                    <h2>Grocery</h2>
+                    <ul data-role="listview">
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Dals and Pulses</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>
+                                    Dals and Pulses
+                                    Dry Fruits
+                                </h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Edible oil & Ghee</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Flour</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Masala & Spice</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Organic Staples</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Rice & Rice products</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Salt, Sugar & Jaggery</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h2>Bread, Diary & Eggs</h2>
+                    <ul data-role="listview">
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Bread & Bakery</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Diary products</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Eggs</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Fresh Foods & Meals</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h2>Beverages</h2>
+                    <ul data-role="listview">
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Ayuervedic</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Energy & health drinks</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Fruits Drinks & Juice</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Minaral Water</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Organic Beverage</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Soft drinks</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Tea & Coffee</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h2>Branded Foods</h2>
+                    <ul data-role="listview">
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Ayuervedic Foods</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Baby foods</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Baking & desert items</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Biscuite</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Breakfast Cereals</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Canned Food</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Canned Food</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Chocolate & Sweets</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Healts & Nutrition</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h2>Personal Care</h2>
+                    <ul data-role="listview">
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Ayuervedic</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>baby Care</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Cosmetics</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Deos & Perfumes</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Fasion Accessories</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Grooming tools</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Hair Care</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h2>House Hold</h2>
+                    <ul data-role="listview">
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Books</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Care Care</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Cookware</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Detergent</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="item-list.html">
+                                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                                <h2>Electrical</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- content:end-->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="item-search.html" data-icon="search">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

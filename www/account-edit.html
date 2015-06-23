@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PickAtHome.com</title>
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page-index">
+        <!--menu:start-->
+        <div id="mypanel" data-role="panel" data-display="overlay">
+            <ul data-role="listview" data-split-icon="arrow-l">
+                <li>
+                    <a href="index.html">
+                        <h3>HOME</h3>
+                    </a>
+                    <a href="#app-header" data-rel="close">&nbsp;</a>
+                </li>
+            </ul>
+            <br />
+            <!--service type-->
+            <label for="select-native-2" style="font-size:small">Service Type:</label>
+            <select name="select-native-2" id="select-native-2" data-mini="true">
+                <option value="1">Kirana/Groccery</option>
+            </select>
+            <br />
+            <ul data-role="listview">
+                <li data-icon="user">
+                    <a href="#popupLogin" data-rel="popup" data-position-to="window" data-transition="pop">
+                        Log In
+                    </a>
+                    <div data-role="popup" id="popupLogin" class="ui-corner-all">
+                        <form>
+                            <div style="padding:10px 20px;">
+                                <h3>Please sign in</h3>
+                                <label for="un" class="ui-hidden-accessible">Username:</label>
+                                <input name="user" id="un" value="" placeholder="username" type="text">
+                                <label for="pw" class="ui-hidden-accessible">Password:</label>
+                                <input name="pass" id="pw" value="" placeholder="password" type="password">
+                                <button type="submit" class="ui-btn ui-corner-all ui-btn-icon-left">Sign in</button>
+                            </div>
+                        </form>
+                        <div style="padding:10px 20px;">
+                            <h4>New User</h4>
+                            <a href="#" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Sign Up</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <br />
+            <br />
+            <ul data-role="listview">
+                <li>
+                    <a href="store.html">
+                        My Shop
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Add Seller
+                    </a>
+                </li>
+                <li>
+                    <a href="account.html">
+                        Account
+                    </a>
+                </li>
+            </ul>
+            <br />
+            <br />
+            <ul data-role="listview">
+                <li>
+                    <a href="index.html">
+                        Help & Support
+                    </a>
+                </li>
+            </ul>
+            <br />
+            <p>
+                <h3><a href="pah.html">Pickathome.com</a> &reg;</h3>
+                <span>Daily supplies from preople you know.</span>
+                <br />
+                <br />
+                <span>Call us at 909090909090 or mail us at sell@pickathome.com.</span>
+            </p>
+        </div>
+        <!--menu:end-->
+        <div id="app-header" data-role="header" data-position="fixed" role="banner">
+            <a href="#mypanel" class="ui-btn ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+            <h1>&nbsp;</h1>
+            <a href="cart.html" class="ui-btn ui-btn-icon-left ui-icon-shop">40</a>
+            <!-- list and header -->
+            <span class="ui-bar ui-bar-a" style="font-size:small;">Account Edit</span>
+        </div>
+        <!-- content:start-->
+        <div data-role="main" class="ui-content">
+            <form>
+                <!--name-->
+                <label for="textinput-2">Name:</label>
+                <input name="textinput-2" id="textinput-2" placeholder="Name" value="" type="text">
+                <label for="profile-pic">Picture:</label>
+                <img src="http://stage-web.pickathome.com/image/0101.jpg" />
+                <input name="profile-pic" id="profile-pic" type="file">
+                <h3 class="ui-bar ui-bar-a">Address</h3>
+                <label for="textarea-address1">Address 1:</label>
+                <textarea cols="40" rows="8" name="textarea-address1" id="textarea-address1" placeholder="Address"></textarea>
+                <label for="textarea-address2">Address 2:</label>
+                <textarea cols="40" rows="8" name="textarea-address2" id="textarea-address2" placeholder="Address"></textarea>
+                <label for="textinput-street">Street:</label>
+                <input name="textinput-street" id="textinput-street" placeholder="Street" value="" type="text">
+                <label for="textinput-city">City:</label>
+                <input name="textinput-city" id="textinput-city" placeholder="City" value="" type="text">
+                <label for="select-native-4">State:</label>
+                <select name="select-native-4" id="select-native-4">
+                    <option value="1">State 1</option>
+                    <option value="2">State 1</option>
+                    <option value="3">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                    <option value="4">State 1</option>
+                </select>
+                <label for="textinput-pin">Pin:</label>
+                <input name="textinput-pin" id="textinput-pin" placeholder="PIN" value="" type="text">
+            </form>
+        </div>
+        <!-- content:end-->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="account.html" data-icon="back">Back</a></li>
+                    <li><a href="account.html" data-icon="plus">Save changes</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

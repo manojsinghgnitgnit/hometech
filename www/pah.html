@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PickAtHome.com</title>
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page-index">
+        <!--menu:start-->
+        <div id="mypanel" data-role="panel" data-display="overlay">
+            <ul data-role="listview" data-split-icon="arrow-l">
+                <li>
+                    <a href="index.html">
+                        <h3>HOME</h3>
+                    </a>
+                    <a href="#app-header" data-rel="close">&nbsp;</a>
+                </li>
+            </ul>
+            <br />
+            <!--service type-->
+            <label for="select-native-2" style="font-size:small">Service Type:</label>
+            <select name="select-native-2" id="select-native-2" data-mini="true">
+                <option value="1">Kirana/Groccery</option>
+            </select>
+            <br />
+            <ul data-role="listview">
+                <li data-icon="user">
+                    <a href="#popupLogin" data-rel="popup" data-position-to="window" data-transition="pop">
+                        Log In
+                    </a>
+                    <div data-role="popup" id="popupLogin" class="ui-corner-all">
+                        <form>
+                            <div style="padding:10px 20px;">
+                                <h3>Please sign in</h3>
+                                <label for="un" class="ui-hidden-accessible">Username:</label>
+                                <input name="user" id="un" value="" placeholder="username" type="text">
+                                <label for="pw" class="ui-hidden-accessible">Password:</label>
+                                <input name="pass" id="pw" value="" placeholder="password" type="password">
+                                <button type="submit" class="ui-btn ui-corner-all ui-btn-icon-left">Sign in</button>
+                            </div>
+                        </form>
+                        <div style="padding:10px 20px;">
+                            <h4>New User</h4>
+                            <a href="#" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Sign Up</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <br />
+            <br />
+            <ul data-role="listview">
+                <li>
+                    <a href="store.html">
+                        My Shop
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Add Seller
+                    </a>
+                </li>
+                <li>
+                    <a href="account.html">
+                        Account
+                    </a>
+                </li>
+            </ul>
+            <br />
+            <br />
+            <ul data-role="listview">
+                <li>
+                    <a href="index.html">
+                        Help & Support
+                    </a>
+                </li>
+            </ul>
+            <br />
+            <p>
+                <h3><a href="pah.html">Pickathome.com</a> &reg;</h3>
+                <span>Daily supplies from preople you know.</span>
+                <br />
+                <br />
+                <span>Call us at 909090909090 or mail us at sell@pickathome.com.</span>
+            </p>
+        </div>
+        <!--menu:end-->
+        <div id="app-header" data-role="header" data-position="fixed" role="banner">
+            <a href="#mypanel" class="ui-btn ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+            <h1>&nbsp;</h1>
+            <a href="cart.html" class="ui-btn ui-btn-icon-left ui-icon-shop">40</a>
+            <!-- list and header -->
+            <span class="ui-bar ui-bar-a" style="font-size:small;">About Us</span>
+        </div>
+        <!-- content:start-->
+        <div data-role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">About PickAtHome.com</li>
+                <li>
+                    <a href="pah-about.html">
+                        <h2>About us</h2>
+                        <p>About pickathome.com</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="pah-contact.html">
+                        <h2>Contact Us</h2>
+                        <p>Send us any issue you face or any suggestion.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="pah-terms.html">
+                        <h2>Terms and condition</h2>
+                        <p>User's term and condition on pickathome.com</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- content:end-->
+    </div>
+</body>
+</html>
